@@ -38,3 +38,13 @@ Para construir el proyecto y dejar los ficheros finales en la carpeta __/dist__
 ## Configuracion de parametros basicos
 Los parametros de la aplicacion como el _api-key_ , el puerto del servidor http _port_ , o el usuario que levanta la aplicaci on _username_, se encuentran en el fichero config.ts.
 Este fichero toma los valores de las variables de ambiente del sistema y en caso de que no se encuentren disponibles, las configura con un valor por defecto.
+
+## Curso
+
+Fundamento Devops
+
+## Alumno
+
+**Nombre:** [Leonardo]
+**Apellido:** [Espinosa]
+
