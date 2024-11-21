@@ -12,7 +12,9 @@ Para construir el proyecto y dejar los ficheros finales en la carpeta __/dist__
 
     npm run build
 
-    
+Para ejecutar los test es con
+
+    npm run test
 ## Lista de endpoints
 
 * http://localhost:3000/
