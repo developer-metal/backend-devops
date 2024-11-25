@@ -2,13 +2,23 @@ pipeline {
     agent any
     stages{
         stage("build - instalacion dependencias"){
-            steps{
-                sh 'npm install'
+            agent {
+                docker {
+                    image 'node:22-alpine'
+                    reuseNode true
+                }
             }
-        }
-        stage("build - build del proyecto"){
-            steps{
-                sh 'npm run build'
+            stages{
+                stage("build - instalacion dependencias"){
+                    steps{
+                        sh 'npm install'
+                    }
+                }
+                stage("build - build del proyecto"){
+                    steps{
+                        sh 'npm run build'
+                    }
+                }
             }
         }
     }
